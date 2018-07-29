@@ -17,9 +17,9 @@ steps:
   
 substitutions:
     _PROJECT: edureka-gcp-training-mahesh
-    _DEPLOYMENTNAME: mycloudbuildemo
-    _CONTAINERNAME: cloudbuilddemo
-    _VERSION: v3.0    
+    _DEPLOYMENTNAME: edurekak8sdemo
+    _CONTAINERNAME: container-demo
+    _VERSION: v2.0    
     
 options:
     substitution_option: 'ALLOW_LOOSE'
