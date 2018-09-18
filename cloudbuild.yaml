@@ -6,7 +6,7 @@ steps:
   args: ['build', '-t', 'gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}', '.']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['config ', 'set', 'compute/zone', 'asia-south1-a']
+  args: ['config', 'set', 'compute/zone', 'asia-south1-a']
   
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['container', 'clusters', 'get-credentials', 'edureka-k8s-cluster', '--zone', 'asia-south1-a']
