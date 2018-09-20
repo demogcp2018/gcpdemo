@@ -5,17 +5,14 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}', '.']
 
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['config', 'set', 'compute/zone', 'asia-south1-a']
-
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
   - 'set'
   - 'image'
   - 'deployment/${_DEPLOYMENTNAME}'
-  - 'container-demo=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
+  - '${_DEPLOYMENTNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-a'
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=edureka-k8s-cluster'
   
 substitutions:
