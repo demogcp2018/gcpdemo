@@ -19,7 +19,7 @@ substitutions:
     _PROJECT: edureka-gcp-training-demos
     _DEPLOYMENTNAME: edurekak8sdemo
     _CONTAINERNAME: container-demo
-    _VERSION: v1.2    
+    _VERSION: v1.1
     
 options:
     substitution_option: 'ALLOW_LOOSE'
