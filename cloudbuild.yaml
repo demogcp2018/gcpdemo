@@ -19,7 +19,7 @@ substitutions:
     _PROJECT: more-on-vpc
     _DEPLOYMENTNAME: edurekak8sdemo
     _CONTAINERNAME: container-demo
-    _VERSION: v1.1    
+    _VERSION: v1.2    
     
 options:
     substitution_option: 'ALLOW_LOOSE'
