@@ -16,10 +16,10 @@ steps:
   - 'CLOUDSDK_CONTAINER_CLUSTER=edureka-k8s-cluster'
   
 substitutions:
-    _PROJECT: edureka-gcp-training-demos
-    _DEPLOYMENTNAME: edurekak8sdemo
+    _PROJECT: edureka-gcp-demo-project
+    _DEPLOYMENTNAME: edureka-k8s-demo
     _CONTAINERNAME: container-demo
-    _VERSION: v1.1
+    _VERSION: v2.0
     
 options:
     substitution_option: 'ALLOW_LOOSE'
