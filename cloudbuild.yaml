@@ -17,7 +17,7 @@ steps:
   
 substitutions:
     _PROJECT: edureka-batch3
-    _DEPLOYMENTNAME: edureka-k8s-demo
+    _DEPLOYMENTNAME: edurekak8sdemo
     _CONTAINERNAME: container-demo
     _VERSION: v2.0
     
